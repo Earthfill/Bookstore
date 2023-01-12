@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bookstore.Dto
 {
-    public record CreateBookDto
+    public class CreateBookDto
     {
         [Required]
         public string Name { get; init; }

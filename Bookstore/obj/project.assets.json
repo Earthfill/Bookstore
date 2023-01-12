@@ -813,11 +813,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\USER\\Personal Projects\\C#\\Bokstore\\Bookstore\\Bookstore.csproj",
+      "projectUniqueName": "C:\\Users\\USER\\Personal Projects\\C#\\Bookstore\\Bookstore\\Bookstore\\Bookstore.csproj",
       "projectName": "Bookstore",
-      "projectPath": "c:\\Users\\USER\\Personal Projects\\C#\\Bokstore\\Bookstore\\Bookstore.csproj",
+      "projectPath": "C:\\Users\\USER\\Personal Projects\\C#\\Bookstore\\Bookstore\\Bookstore\\Bookstore.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\USER\\Personal Projects\\C#\\Bokstore\\Bookstore\\obj\\",
+      "outputPath": "C:\\Users\\USER\\Personal Projects\\C#\\Bookstore\\Bookstore\\Bookstore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -831,6 +831,8 @@
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

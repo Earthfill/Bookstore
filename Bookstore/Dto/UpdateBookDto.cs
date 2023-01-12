@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bookstore.Dto
 {
-    public record UpdateBookDto
+    public class UpdateBookDto
     {
         [Required]
         public string Name { get; init; }

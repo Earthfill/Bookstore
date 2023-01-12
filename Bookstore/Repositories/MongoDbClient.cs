@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Bookstore.Interface;
 using Bookstore.Model;
+using MongoDB.Bson;
 using MongoDB.Driver;
 
 namespace Bookstore.Repositories
@@ -21,29 +22,26 @@ namespace Bookstore.Repositories
             booksCollection = database.GetCollection<Book>(collectionName);
         }
 
-        public Task CreateBookAsync(Book book)
+        public async Task CreateBookAsync(Book book)
         {
-            throw new NotImplementedException();
+            await booksCollection.InsertOneAsync(book);
         }
 
-        public Task DeleteBookAsync(Guid id)
+        public async Task DeleteBookAsync(Guid id)
         {
-            throw new NotImplementedException();
+            var filter = filterBuilder.Eq(book => book.Id, id);
+            await booksCollection.DeleteOneAsync(filter);
         }
 
-        public Task<Book> GetBooksAsync(Guid id)
+        public async Task<Book> GetBookAsync(Guid id)
         {
-            throw new NotImplementedException();
+            var filter = filterBuilder.Eq(book => book.Id, id);
+            return await booksCollection.Find(filter).SingleOrDefaultAsync();
         }
 
-        public Task<IEnumerable<Book>> GetBooksAsync()
+        public async Task<IEnumerable<Book>> GetBooksAsync()
         {
-            throw new NotImplementedException();
-        }
-
-        public Task UpdateBookAsync(Book book)
-        {
-            throw new NotImplementedException();
+            return await booksCollection.Find(new BsonDocument()).ToListAsync();
         }
     }
 }

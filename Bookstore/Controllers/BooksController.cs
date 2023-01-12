@@ -60,22 +60,5 @@ namespace Bookstore.Controllers
             await bookServices.DeleteBookAsync(id);
             return NoContent();
         }
-
-        [HttpPut("{id}")]
-        public async Task<ActionResult> UpdateBookAsync(Guid id, UpdateBookDto bookDto)
-        {
-            var existingBook = await bookServices.GetBookAsync(id);
-            if (existingBook is null)
-            {
-                return NotFound();
-            }
-            Book updatedBook = existingBook with
-            {
-                Name = bookDto.Name,
-                Price = bookDto.Price
-            };
-            await bookServices.UpdateBookAsync(updatedBook);
-            return NoContent();
-        }
     }
 }

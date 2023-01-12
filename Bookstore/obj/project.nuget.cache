@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8DGM+x3wL9L/9FHuvUuLsp5PYswQgCK6SFIbOxzSB/d/4N498tD0L3q6MVHwcOgELXvfcrF5sC6wwbRavNqA4g==",
+  "dgSpecHash": "JdvdIRHDccJTiuUjd01fNKna40HhsCXZ/qPX/AwTBS7ckAyKqaro8zZb826hRkw98xFJ2qM41FkkKjyc+ArdNw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\USER\\Personal Projects\\C#\\Bokstore\\Bookstore\\Bookstore.csproj",
+  "projectFilePath": "C:\\Users\\USER\\Personal Projects\\C#\\Bookstore\\Bookstore\\Bookstore\\Bookstore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\dnsclient\\1.6.0\\dnsclient.1.6.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
